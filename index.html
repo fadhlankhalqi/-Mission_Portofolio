@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Portfolio tugas Full-Stack Development Fadlan Khalqi, berisi Mission 2–8 dari Git, frontend, database, React, hingga REST API." />
+    <meta name="theme-color" content="#111410" />
+    <title>Fadlan Khalqi | Portfolio Tugas Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Kembali ke atas">
+        <span class="brand-mark">FK</span>
+        <span class="brand-copy">Fadlan Khalqi<br /><small>Siswa Full-Stack Development</small></span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span></span><span></span><span></span><span class="sr-only">Buka navigasi</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#work">Mission</a>
+        <a class="nav-contact" href="#contact">Kontak <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="profile-portrait" aria-label="Area foto profil Fadlan Khalqi">
+          <div class="profile-frame">
+            <img src="profile-ghibli.png" alt="Ilustrasi profil Fadlan Khalqi bergaya animasi Jepang" data-profile-photo />
+            <div class="profile-fallback" data-profile-fallback aria-hidden="true">
+              <span>FK</span>
+              <svg viewBox="0 0 300 380"><circle cx="150" cy="116" r="72"/><path d="M32 380c8-112 51-168 118-168s110 56 118 168z"/></svg>
+            </div>
+          </div>
+          <div class="profile-caption"><span>PROFILE / 01</span><b>FADLAN KHALQI</b></div>
+        </div>
+        <div class="hero-kicker reveal">
+          <span class="status-dot"></span>
+          Portfolio Tugas • Full-Stack Development
+        </div>
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-line reveal">BELAJAR</span>
+          <span class="hero-line hero-line--outline reveal">FULL-STACK</span>
+          <span class="hero-line hero-line--indent reveal">LEWAT <em>TUGAS.</em></span>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p>
+            Saya <strong>Fadlan Khalqi</strong>, siswa Full-Stack Development yang mendokumentasikan tugas dan proses belajar
+            dari frontend, database, hingga backend.
+          </p>
+          <a class="circle-link" href="#work" aria-label="Lihat kumpulan mission">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 10v40M17 35l15 15 15-15" /></svg>
+          </a>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 / 08</div>
+      </section>
+
+      <div class="marquee" aria-label="Daftar teknologi">
+        <div class="marquee-track">
+          <span>HTML & CSS</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>REACT</span><i>✦</i><span>EXPRESS</span><i>✦</i><span>MYSQL</span><i>✦</i><span>REST API</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="section-label reveal"><span>02</span> Profil singkat</div>
+        <div class="about-copy">
+          <h2 id="about-title" class="section-heading reveal">BELAJAR DENGAN<br />MEMBANGUN <em>NYATA.</em></h2>
+          <div class="about-detail reveal">
+            <p class="lead">Portfolio ini merangkum tugas Mission 2–8 yang saya kerjakan selama mengikuti pembelajaran Full-Stack Development.</p>
+            <p>Setiap mission berisi materi yang berbeda, mulai dari Git, pembuatan tampilan web, JavaScript, database, React, hingga REST API.</p>
+            <a class="text-link" href="mailto:fadhlan.khalqi@gmail.com">fadhlan.khalqi@gmail.com <span>↗</span></a>
+          </div>
+        </div>
+        <div class="stats reveal" aria-label="Ringkasan portfolio">
+          <div><strong>07</strong><span>Mission<br />terdokumentasi</span></div>
+          <div><strong>03</strong><span>Materi utama<br />web development</span></div>
+          <div><strong>01</strong><span>Alur belajar<br />berkelanjutan</span></div>
+        </div>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-label reveal"><span>03</span> Dokumentasi tugas • Mission 2–8</div>
+        <div class="work-intro">
+          <h2 id="work-title" class="section-heading reveal">TUJUH MISSION.<br /><em>SATU PROGRES.</em></h2>
+          <p class="reveal">Tujuh tugas pembelajaran yang menunjukkan materi yang saya pelajari secara bertahap dari dasar hingga backend lanjutan.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project project--paper reveal" id="mission-2">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-02.portfolio</span></div>
+            <div class="project-meta"><span>MISSION 02</span><span>STUDI KASUS / GIT</span><span>2026</span></div>
+            <div class="project-layout">
+              <div class="project-copy">
+                <h3>Analisis studi kasus Git merge conflict.</h3>
+                <p class="problem"><b>Tugas.</b> Menganalisis kasus dua perubahan pada baris yang sama di <code>index.html</code> hingga menyebabkan merge conflict.</p>
+                <p><b>Yang dipelajari.</b> Membaca conflict marker, menentukan hasil penggabungan, melakukan commit, dan memeriksa kembali riwayat Git.</p>
+                <div class="tags"><span>Git</span><span>Branching</span><span>Merge Conflict</span></div>
+                <a class="project-link" href="Mission/Mission-2/Fadlan%20Khalqi_19026_Mission%20Basic%20%20FSD.pdf" target="_blank" rel="noreferrer">Lihat studi kasus <span>↗</span></a>
+              </div>
+              <div class="git-visual" aria-label="Visualisasi proses merge Git">
+                <div class="code-top"><i></i><i></i><i></i><span>resolve-conflict.sh</span></div>
+                <pre><span class="muted">$ git merge feature/search</span>
+<span class="danger">CONFLICT</span> (content): index.html
+
+<span class="danger">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+search-product-3
+<span class="accent">=======</span>
+search-product-4
+<span class="accent">&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</span>
+
+<span class="ok">✓ Accept both changes</span>
+<span class="muted">$ git commit -m "resolve conflict"</span></pre>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--split reveal" id="mission-3">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-03.portfolio</span></div>
+            <div class="project-image browser-frame">
+              <img src="Mission/Mission-3/videobelajar/Login.png" alt="Tampilan halaman login VideoBelajar" loading="lazy" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>FRONTEND FUNDAMENTALS</span><span>2026</span></div>
+              <h3>VideoBelajar:<br />latihan membuat UI responsif.</h3>
+              <p><b>Tugas.</b> Membuat halaman login, registrasi, dan beranda berdasarkan referensi desain yang diberikan.</p>
+              <p><b>Yang dipelajari.</b> Menyusun form, hirarki visual, katalog kelas, dan layout yang menyesuaikan ukuran layar.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive UI</span></div>
+              <div class="project-actions">
+                <a class="project-link" href="Mission/Mission-3/videobelajar/index.html" target="_blank">Buka proyek <span>↗</span></a>
+                <a class="project-link project-link--quiet" href="Mission/Mission-3/Fadlan%20Khalqi_19026_Mission_ke_3.pdf" target="_blank">Bukti PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--lime reveal" id="mission-4">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-04.portfolio</span></div>
+            <div class="project-meta"><span>MISSION 04</span><span>JAVASCRIPT APPLICATION</span><span>2026</span></div>
+            <div class="project-layout project-layout--reverse">
+              <div class="task-visual" aria-label="Pratinjau aplikasi TaskFlow">
+                <div class="task-head"><span>TaskFlow</span><small>03 TASKS</small></div>
+                <div class="task-item"><i class="high"></i><span>Review API response</span><b>HIGH</b></div>
+                <div class="task-item"><i class="medium"></i><span>Update responsive layout</span><b>MED</b></div>
+                <div class="task-item task-item--done"><i></i><span>Build local storage flow</span><b>DONE</b></div>
+                <div class="task-input">+ ADD A NEW TASK <kbd>CTRL ↵</kbd></div>
+              </div>
+              <div class="project-copy">
+                <h3>TaskFlow: latihan JavaScript dan localStorage.</h3>
+                <p><b>Tugas.</b> Membuat aplikasi to-do list dengan profil pengguna, prioritas, pencarian, dan status tugas.</p>
+                <p><b>Yang dipelajari.</b> Manipulasi DOM, event JavaScript, notifikasi, dan penyimpanan data menggunakan <code>localStorage</code>.</p>
+                <div class="tags"><span>JavaScript</span><span>LocalStorage</span><span>DOM</span></div>
+                <div class="project-actions">
+                  <a class="project-link" href="Mission/Mission-4/index.html" target="_blank">Coba aplikasi <span>↗</span></a>
+                  <a class="project-link project-link--quiet" href="Mission/Mission-4/Fadlan%20Khalqi_19026_Mission_ke_3.pptx">Unduh bukti</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--database reveal" id="mission-5">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-05.portfolio</span></div>
+            <div class="project-meta"><span>MISSION 05</span><span>DATABASE DESIGN / SQL</span><span>2026</span></div>
+            <div class="project-layout">
+              <div class="project-copy">
+                <h3>Latihan merancang database EduCourse.</h3>
+                <p><b>Tugas.</b> Menyusun database untuk data pengguna, tutor, kelas, modul, pembayaran, progres belajar, dan ulasan.</p>
+                <p><b>Yang dipelajari.</b> Membuat 12 tabel relasional dengan primary key, foreign key, constraint, dan aturan cascade.</p>
+                <div class="tags"><span>MySQL</span><span>ERD</span><span>Relational Design</span></div>
+                <a class="project-link" href="Mission/Mission-5/SQL.pdf" target="_blank">Buka dokumentasi SQL <span>↗</span></a>
+              </div>
+              <div class="schema" aria-label="Diagram sederhana skema database">
+                <div class="schema-card schema-users"><b>users</b><span>id • email • password</span></div>
+                <div class="schema-card schema-course"><b>produk_kelas</b><span>tutor • kategori • harga</span></div>
+                <div class="schema-card schema-module"><b>modul_kelas</b><span>produk • urutan</span></div>
+                <div class="schema-card schema-order"><b>orders</b><span>user • produk • status</span></div>
+                <div class="schema-card schema-review"><b>review</b><span>rating • komentar</span></div>
+                <svg viewBox="0 0 600 360" aria-hidden="true"><path d="M132 78H285M390 78h70v210H332M337 112v60M285 202H132v86h100M337 232v56" /></svg>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--split project--api reveal" id="mission-6">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-06.portfolio</span></div>
+            <div class="project-image browser-frame browser-frame--api">
+              <img src="Mission/Mission-6/Screenshot/1_list%20Semua%20Course-Kelas.jpeg" alt="Pengujian endpoint daftar course melalui Postman" loading="lazy" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>BACKEND FUNDAMENTALS</span><span>2026</span></div>
+              <h3>Latihan membuat<br />Course API.</h3>
+              <p><b>Tugas.</b> Menghubungkan database EduCourse dengan Express dan membuat endpoint CRUD untuk data course.</p>
+              <p><b>Yang dipelajari.</b> Menggunakan method GET, POST, PUT, DELETE serta parameterized query pada MySQL.</p>
+              <div class="endpoint-list" aria-label="Endpoint yang dibuat">
+                <span><b>GET</b> /course</span><span><b>POST</b> /course</span><span><b>PUT</b> /course/:id</span><span><b>DEL</b> /course/:id</span>
+              </div>
+              <a class="project-link" href="Mission/Mission-6/Fadlan%20Khalqi_19026_Mission_ke_6.pdf" target="_blank">Lihat pengujian <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project project--cinema reveal" id="mission-7">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-07.portfolio</span></div>
+            <div class="project-meta"><span>MISSION 07</span><span>REACT / API INTEGRATION</span><span>2026</span></div>
+            <div class="cinema-visual browser-frame">
+              <img src="Mission/Mission-7/chill-home.png" alt="Tampilan aplikasi streaming Chill Movie" loading="lazy" />
+              <span class="mobile-shot"><img src="Mission/Mission-7/chill-mobile.png" alt="Tampilan mobile Chill Movie" loading="lazy" /></span>
+            </div>
+            <div class="cinema-copy project-copy">
+              <div><h3>CHILL: latihan React dan integrasi API.</h3></div>
+              <div>
+                <p><b>Tugas.</b> Membuat aplikasi katalog film React berdasarkan mockup dan menghubungkannya dengan MockAPI.</p>
+                <p><b>Yang dipelajari.</b> Axios, Context API, custom hook, operasi CRUD, pencarian, filter genre, loading state, dan tampilan mobile.</p>
+                <div class="tags"><span>React</span><span>Axios</span><span>Context API</span><span>Vite</span></div>
+                <div class="project-actions">
+                  <a class="project-link" href="Mission/Mission-7/dist/index.html" target="_blank">Buka build <span>↗</span></a>
+                  <a class="project-link project-link--quiet" href="Mission/Mission-7/Fadlan%20Khalqi_19026_Mission_ke_7.pdf" target="_blank">Bukti PDF</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--final reveal" id="mission-8">
+            <div class="project-chrome"><i></i><i></i><i></i><span>mission-08.portfolio</span></div>
+            <div class="project-meta"><span>MISSION 08</span><span>BACKEND ADVANCED</span><span>2026</span></div>
+            <div class="final-grid">
+              <div class="project-copy">
+                <p class="overline">TUGAS BACKEND LANJUTAN</p>
+                <h3>EduCourse API:<br />autentikasi dan upload.</h3>
+                <p><b>Tugas.</b> Melanjutkan Course API dengan fitur autentikasi, verifikasi email, pencarian data, dan upload gambar.</p>
+                <p><b>Yang dipelajari.</b> JWT, hash password, Sequelize ORM, filter, sorting, pencarian course, Nodemailer, dan Multer.</p>
+                <div class="tags"><span>Express</span><span>Sequelize</span><span>JWT</span><span>Nodemailer</span><span>Multer</span></div>
+                <div class="project-actions">
+                  <a class="project-link" href="Mission/Mission-8/README.md" target="_blank">Dokumentasi API <span>↗</span></a>
+                  <a class="project-link project-link--quiet" href="Mission/Mission-8/Mission-8.postman_collection.json" download>Postman collection</a>
+                </div>
+              </div>
+              <div class="api-console" aria-label="Alur autentikasi API">
+                <div class="console-head"><span>EDUCOURSE / API</span><i>LIVE</i></div>
+                <div class="console-row"><b class="post">POST</b><span>/register</span><small>201</small></div>
+                <div class="console-log"><span>01</span><code>password → bcrypt.hash()</code></div>
+                <div class="console-log"><span>02</span><code>email → verification_token</code></div>
+                <div class="console-row"><b class="post">POST</b><span>/login</span><small>200</small></div>
+                <div class="console-log"><span>03</span><code>Authorization: Bearer ••••••</code></div>
+                <div class="console-row"><b class="get">GET</b><span>/course?search=node</span><small>200</small></div>
+                <div class="console-response"><span>{</span><br />&nbsp;&nbsp;"authenticated": <b>true</b>,<br />&nbsp;&nbsp;"data": [ ... ]<br /><span>}</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true"><span>KEEP LEARNING • KEEP GROWING • </span></div>
+        <div class="section-label reveal"><span>04</span> Kontak</div>
+        <p class="contact-pre reveal">Sebagai siswa Full-Stack Development, saya terbuka untuk berdiskusi, menerima masukan, dan belajar dari koneksi baru.</p>
+        <h2 id="contact-title" class="reveal">MARI SALING<br /><em>BELAJAR.</em></h2>
+        <div class="contact-actions reveal">
+          <a class="contact-link" href="mailto:fadhlan.khalqi@gmail.com">
+            <small>EMAIL</small><span>fadhlan.khalqi@gmail.com</span><b>↗</b>
+          </a>
+          <a class="contact-link" href="https://github.com/fadhlankhalqi?tab=repositories" target="_blank" rel="noreferrer">
+            <small>GITHUB</small><span>github.com/fadhlankhalqi</span><b>↗</b>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Fadlan Khalqi</p>
+      <p>Portfolio tugas pembelajaran Full-Stack Development.</p>
+      <a href="#top">Kembali ke atas ↑</a>
+    </footer>
+  </body>
+</html>

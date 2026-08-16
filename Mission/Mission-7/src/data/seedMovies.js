@@ -1,0 +1,62 @@
+const posters = [
+  '4692bdf761e9ced1a89dfa4c1729ca078e889550',
+  'f2a5348a402bdc165e2932d5ccc14c718f5f6274',
+  '2daedbb355ce027e2339ba4f222eb1ac38dc2545',
+  'f792ef126d51f2890e133d0fc1163fbb2a38390f',
+  '962f7fdca08faf085fd15fab496a3f1756e62aa8',
+  'bcb409f7ab042531436332710f400d7c925035be',
+  '4faa7e6a68cd875ada9dab4f5dda396c845b69e3',
+  'be5cfcaff6545ea1c643bc34f998cb1c29298052',
+  '1a093a244053f64a26a83b3bad0871500a38c36d',
+  '66f5b172b02ee5140c6c3950674ff222c25a2afc',
+  'c7b15fb4766b3ff800074305eb23756a732bcf17',
+  'f45789316d9cdcb34b614f46cd20b23c29cec83d',
+  'bb01034a195ca385847dfb00597f0a200c613751',
+  'f13a41ae67ffc54c229ba84966d225c70f917ceb',
+  '765573b3f4768296335836fe64bb6ed7d1f7f1aa',
+  'c59b5e96e4a96a739f2d35bd54931adbf07c68ee',
+]
+
+const backdrops = [
+  '8515ad14444432c91847498e38802d7aaabb94ea',
+  '6d2474f1c676d44e8fe4ac7ecc4eee6e5b0b26cc',
+  'e5f68a32cd54ff5b6cadc7c42847b903d7bd8d9f',
+  '6ee5061d9cff034d2a965c5ead8c1ca1d79a0936',
+  '7684dcfb70bde68a9ae7688f7dcd99772c7bcca7',
+  '875a9c8a7613031bc5638851428a322684bda075',
+]
+
+const movieInfo = [
+  ['Duty After School', 'Drama', 'Series', 2023, 8.8],
+  ['Alice in Borderland', 'Thriller', 'Series', 2022, 8.7],
+  ['The Tomorrow War', 'Sci-Fi', 'Film', 2021, 8.2],
+  ['A Man Called Otto', 'Drama', 'Film', 2022, 8.5],
+  ['Blue Lock', 'Anime', 'Series', 2023, 9.1],
+  ['Big Hero 6', 'Animation', 'Film', 2014, 8.4],
+  ['All of Us Are Dead', 'Horror', 'Series', 2022, 8.6],
+  ['The Little Mermaid', 'Fantasy', 'Film', 2023, 7.8],
+  ['Suzume', 'Anime', 'Film', 2022, 8.9],
+  ['Sonic the Hedgehog', 'Adventure', 'Film', 2020, 8.1],
+  ['Missing', 'Mystery', 'Film', 2023, 8.3],
+  ['My Hero Academia', 'Anime', 'Series', 2023, 8.7],
+  ['Quantumania', 'Action', 'Film', 2023, 7.7],
+  ['Megan', 'Horror', 'Film', 2023, 7.9],
+  ['The Last of Us', 'Drama', 'Series', 2023, 9.2],
+  ['Avatar: The Way of Water', 'Fantasy', 'Film', 2022, 8.8],
+]
+
+export const seedMovies = movieInfo.map(([title, genre, type, year, rating], index) => ({
+  id: String(index + 1),
+  title,
+  genre,
+  type,
+  year,
+  rating,
+  duration: type === 'Film' ? `${98 + index * 3} min` : `${8 + (index % 4)} Episode`,
+  age: index % 3 === 0 ? '18+' : '13+',
+  posterUrl: `/assets/posters/${posters[index]}.jpg`,
+  backdropUrl: `/assets/backdrops/${backdrops[index % backdrops.length]}.jpg`,
+  description: `${title} menghadirkan kisah yang kuat tentang pilihan, keberanian, dan orang-orang yang berjuang menemukan jalan mereka di tengah keadaan yang tak terduga.`,
+  featured: index === 0,
+  progress: index < 4 ? [68, 42, 81, 27][index] : 0,
+}))

@@ -1,0 +1,24 @@
+# Dependencies
+**/node_modules/
+
+# Local configuration and secrets
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Runtime uploads
+Mission/Mission-8/uploads/*
+!Mission/Mission-8/uploads/.gitkeep
+
+# Local QA and unused source assets
+portfolio-full.png
+portfolio-preview-*.png
+profile-caricature*.png
+foto.jpg
+Fadlan Khalqi Motivation_Letter.pdf
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.nested-git-backup/

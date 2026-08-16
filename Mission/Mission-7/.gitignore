@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+*.log
+chill-home.png
+chill-mobile.png
+figma-reference
+*.fig

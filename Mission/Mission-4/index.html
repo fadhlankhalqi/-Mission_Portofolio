@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — To Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Task<span>Flow</span></div>
+    <div class="header-sub">Employee Task Manager</div>
+  </header>
+
+  <!-- PROFILE CARD -->
+  <div class="profile-card" id="profileCard"></div>
+
+  <!-- SETUP MODAL -->
+  <div id="setupModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-bar"></div>
+      <div class="modal-title">Halo! 👋</div>
+      <div class="modal-sub">Masukkan info kamu untuk mulai.</div>
+
+      <label for="inputName">Nama Lengkap</label>
+      <input id="inputName" type="text" class="modal-input" placeholder="e.g. Budi Santoso">
+
+      <label for="inputRole">Jabatan / Posisi</label>
+      <input id="inputRole" type="text" class="modal-input" placeholder="e.g. Software Engineer">
+
+      <button class="btn-start" onclick="startApp()">Mulai Sekarang →</button>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main">
+
+    <!-- LEFT: INPUT PANEL -->
+    <div class="input-panel">
+      <div class="panel-title">Tambah Tugas Baru</div>
+
+      <label for="taskInput">Deskripsi Tugas</label>
+      <textarea id="taskInput" placeholder="Tuliskan tugasmu di sini..."></textarea>
+
+      <div class="priority-group">
+        <label>Level Prioritas</label>
+        <div class="priority-btns">
+          <button class="prio-btn" data-p="low"    onclick="setPriority('low')">🟢 Low</button>
+          <button class="prio-btn" data-p="medium" onclick="setPriority('medium')">🟡 Medium</button>
+          <button class="prio-btn" data-p="high"   onclick="setPriority('high')">🔴 High</button>
+        </div>
+      </div>
+
+      <button class="btn-submit" onclick="addTask()">+ Submit Tugas</button>
+      <div class="hint">Atau tekan <kbd>Ctrl</kbd> + <kbd>Enter</kbd></div>
+    </div>
+
+    <!-- RIGHT: LISTS -->
+    <div class="right-panel">
+
+      <!-- TO DO -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-label">
+            📋 To Do
+            <span class="badge" id="todoCount">0</span>
+          </div>
+          <div class="search-wrap">
+            <input type="text" id="taskSearch" placeholder="Cari hari/tugas..." oninput="renderAll()">
+          </div>
+          <button class="btn-delete-all" onclick="deleteAll()">🗑 Hapus Semua</button>
+        </div>
+        <div class="todo-list" id="todoList">
+          <div class="empty-state">
+            <span class="empty-icon">📭</span>
+            Belum ada tugas. Yuk tambah!
+          </div>
+        </div>
+      </div>
+
+      <!-- DONE -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-label">
+            ✅ Done
+            <span class="badge" id="doneCount">0</span>
+          </div>
+        </div>
+        <div class="done-list" id="doneList">
+          <div class="empty-state">
+            <span class="empty-icon">🎯</span>
+            Belum ada tugas selesai.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
