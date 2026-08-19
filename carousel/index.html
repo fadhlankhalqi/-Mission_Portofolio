@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carousel Portfolio — Fadlan Khalqi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="deck" aria-label="Carousel portfolio Mission 2 sampai 8">
+      <article class="slide cover" data-slide="1" id="slide-1">
+        <div class="grid-bg"></div>
+        <header class="slide-head"><span class="logo">FK</span><span>STUDENT PORTFOLIO / 2026</span><span>01—10</span></header>
+        <div class="cover-copy">
+          <p class="eyebrow"><i></i> FULL-STACK DEVELOPMENT</p>
+          <h1>BELAJAR<br /><span>LEWAT</span><br /><em>TUGAS.</em></h1>
+          <p class="lead">Dokumentasi proses belajar dari Git, frontend, database, hingga backend.</p>
+        </div>
+        <figure class="portrait"><img src="../profile-ghibli.png" alt="Ilustrasi Fadlan Khalqi" /></figure>
+        <div class="name-ticket"><small>PROFILE / 01</small><b>FADLAN KHALQI</b><span>SWIPE →</span></div>
+        <footer class="slide-foot"><span>MISSION 2—8</span><span>#JadiYangKamuMau</span></footer>
+      </article>
+
+      <article class="slide intro light" data-slide="2" id="slide-2">
+        <header class="slide-head"><span class="logo">FK</span><span>PERJALANAN BELAJAR</span><span>02—10</span></header>
+        <p class="big-index">07</p>
+        <div class="intro-copy">
+          <p class="eyebrow"><i></i> SATU PROGRES</p>
+          <h2>TUJUH MISSION.<br />BANYAK HAL<br /><em>BARU.</em></h2>
+          <p>Setiap tugas membantu saya memahami satu bagian dari proses membuat aplikasi web—dimulai dari fondasi, lalu berkembang menuju aplikasi full-stack.</p>
+        </div>
+        <ol class="journey">
+          <li><b>02</b><span>Git</span></li><li><b>03</b><span>HTML & CSS</span></li><li><b>04</b><span>JavaScript</span></li><li><b>05</b><span>Database</span></li><li><b>06</b><span>REST API</span></li><li><b>07</b><span>React</span></li><li><b>08</b><span>Auth</span></li>
+        </ol>
+        <footer class="slide-foot"><span>DASAR → BACKEND LANJUTAN</span><span>02</span></footer>
+      </article>
+
+      <article class="slide git-slide" data-slide="3" id="slide-3">
+        <header class="slide-head"><span class="logo logo-dark">02</span><span>MISSION 02 / GIT</span><span>03—10</span></header>
+        <section class="mission-copy dark-copy">
+          <p class="eyebrow"><i></i> PROBLEM SOLVING</p>
+          <h2>BERDAMAI<br />DENGAN <span>MERGE<br />CONFLICT.</span></h2>
+          <p>Menganalisis dua perubahan pada baris yang sama, membaca conflict marker, menentukan hasil penggabungan, lalu memeriksa riwayat commit.</p>
+          <div class="chips"><span>GIT</span><span>BRANCHING</span><span>MERGE</span></div>
+        </section>
+        <section class="terminal" aria-label="Contoh terminal Git">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>resolve-conflict.sh</span></div>
+          <pre><small>$ git merge feature/search</small>
+<b>CONFLICT</b> index.html
+
+<<<<<<< HEAD
+  &lt;h1&gt;Beranda&lt;/h1&gt;
+=======
+  &lt;h1&gt;Cari Kelas&lt;/h1&gt;
+>>>>>>> feature/search
+
+<strong>$ git add . && git commit</strong></pre>
+        </section>
+        <div class="lesson"><small>YANG SAYA PELAJARI</small><b>Konflik bukan error akhir—tetapi keputusan yang harus diselesaikan dengan teliti.</b></div>
+        <footer class="slide-foot"><span>PORTFOLIO TUGAS</span><span>MISSION 02</span></footer>
+      </article>
+
+      <article class="slide ui-slide" data-slide="4" id="slide-4">
+        <header class="slide-head"><span class="logo logo-dark">03</span><span>MISSION 03 / FRONTEND</span><span>04—10</span></header>
+        <section class="mission-copy compact dark-copy">
+          <p class="eyebrow"><i></i> RESPONSIVE UI</p>
+          <h2>DARI REFERENSI<br />MENJADI <span>HALAMAN.</span></h2>
+          <p>Membangun halaman login, registrasi, dan beranda VideoBelajar dengan struktur yang rapi serta tampilan yang menyesuaikan ukuran layar.</p>
+        </section>
+        <figure class="browser-shot">
+          <div class="browser-bar"><i></i><i></i><i></i><span>videobelajar.local</span></div>
+          <img src="../Mission/Mission-3/videobelajar/Login.png" alt="Halaman login VideoBelajar" />
+        </figure>
+        <div class="result-strip"><div><small>FOKUS</small><b>Form & hierarchy</b></div><div><small>HASIL</small><b>3 halaman</b></div><div><small>LAYOUT</small><b>Responsive</b></div></div>
+        <footer class="slide-foot"><span>HTML • CSS • RESPONSIVE UI</span><span>MISSION 03</span></footer>
+      </article>
+
+      <article class="slide js-slide light" data-slide="5" id="slide-5">
+        <header class="slide-head"><span class="logo">04</span><span>MISSION 04 / JAVASCRIPT</span><span>05—10</span></header>
+        <section class="mission-copy compact">
+          <p class="eyebrow"><i></i> INTERACTIVE APP</p>
+          <h2>BUKAN HANYA<br />TAMPILAN. <em>ADA<br />INTERAKSI.</em></h2>
+          <p>TaskFlow menjadi latihan mengelola tugas, prioritas, pencarian, status, notifikasi, dan penyimpanan data di browser.</p>
+        </section>
+        <section class="task-card">
+          <div class="task-title"><b>TaskFlow</b><span>03 TASKS</span></div>
+          <div class="task-row"><i class="red"></i><span>Review API response</span><b>HIGH</b></div>
+          <div class="task-row"><i class="yellow"></i><span>Update responsive layout</span><b>MED</b></div>
+          <div class="task-row done"><i></i><span>Build localStorage flow</span><b>DONE</b></div>
+          <div class="task-add">+ ADD A NEW TASK <kbd>CTRL ↵</kbd></div>
+        </section>
+        <div class="code-note"><span>01</span><code>DOM → event → state → localStorage</code></div>
+        <footer class="slide-foot"><span>JAVASCRIPT • DOM • LOCALSTORAGE</span><span>MISSION 04</span></footer>
+      </article>
+
+      <article class="slide db-slide" data-slide="6" id="slide-6">
+        <header class="slide-head"><span class="logo logo-dark">05</span><span>MISSION 05 / DATABASE</span><span>06—10</span></header>
+        <section class="mission-copy compact dark-copy">
+          <p class="eyebrow"><i></i> RELATIONAL DESIGN</p>
+          <h2>DATA YANG RAPI<br />DIMULAI DARI<br /><span>STRUKTUR.</span></h2>
+          <p>Merancang database EduCourse untuk pengguna, tutor, kelas, modul, pembayaran, progres belajar, dan ulasan.</p>
+        </section>
+        <section class="schema" aria-label="Skema database EduCourse">
+          <div class="schema-card user"><b>USER</b><small>user_id · PK</small><small>email</small></div>
+          <div class="schema-card course"><b>COURSE</b><small>course_id · PK</small><small>tutor_id · FK</small></div>
+          <div class="schema-card module"><b>MODULE</b><small>module_id · PK</small><small>course_id · FK</small></div>
+          <div class="schema-card progress"><b>PROGRESS</b><small>user_id · FK</small><small>module_id · FK</small></div>
+          <svg viewBox="0 0 600 500" aria-hidden="true"><path d="M155 105H300V175M445 105H300M155 380H300V255M445 380H300" /></svg>
+          <div class="schema-core"><span>12</span><b>TABEL<br />RELASIONAL</b></div>
+        </section>
+        <div class="lesson lesson-blue"><small>YANG SAYA PELAJARI</small><b>Primary key, foreign key, constraint, dan aturan cascade.</b></div>
+        <footer class="slide-foot"><span>MYSQL • ERD • RELATIONAL DESIGN</span><span>MISSION 05</span></footer>
+      </article>
+
+      <article class="slide api-slide light" data-slide="7" id="slide-7">
+        <header class="slide-head"><span class="logo">06</span><span>MISSION 06 / BACKEND</span><span>07—10</span></header>
+        <section class="mission-copy compact">
+          <p class="eyebrow"><i></i> BACKEND FUNDAMENTALS</p>
+          <h2>DATABASE MULAI<br /><em>BISA DIAJAK<br />BICARA.</em></h2>
+          <p>Menghubungkan EduCourse dengan Express dan membuat endpoint CRUD untuk mengelola data course.</p>
+        </section>
+        <div class="endpoint-grid">
+          <div><b class="get">GET</b><code>/course</code><small>LIST</small></div>
+          <div><b class="post">POST</b><code>/course</code><small>CREATE</small></div>
+          <div><b class="put">PUT</b><code>/course/:id</code><small>UPDATE</small></div>
+          <div><b class="del">DEL</b><code>/course/:id</code><small>DELETE</small></div>
+        </div>
+        <figure class="postman-shot"><img src="../Mission/Mission-6/Screenshot/1_list Semua Course-Kelas.jpeg" alt="Pengujian Course API" /></figure>
+        <div class="result-strip dark-strip"><div><small>SERVER</small><b>Express</b></div><div><small>DATABASE</small><b>MySQL</b></div><div><small>QUERY</small><b>Parameterized</b></div></div>
+        <footer class="slide-foot"><span>EXPRESS • MYSQL • REST API</span><span>MISSION 06</span></footer>
+      </article>
+
+      <article class="slide react-slide" data-slide="8" id="slide-8">
+        <header class="slide-head"><span class="logo logo-red">07</span><span>MISSION 07 / REACT</span><span>08—10</span></header>
+        <section class="mission-copy compact dark-copy">
+          <p class="eyebrow"><i></i> API INTEGRATION</p>
+          <h2>CHILL MOVIE.<br /><span>DATA YANG<br />DINAMIS.</span></h2>
+          <p>Membangun katalog film React dan menghubungkannya dengan MockAPI untuk operasi CRUD, pencarian, dan filter genre.</p>
+        </section>
+        <figure class="cinema-shot desktop"><img src="../Mission/Mission-7/chill-home.png" alt="CHILL desktop" /></figure>
+        <figure class="cinema-shot mobile"><img src="../Mission/Mission-7/chill-mobile.png" alt="CHILL mobile" /></figure>
+        <div class="react-tags"><span>REACT</span><span>AXIOS</span><span>CONTEXT API</span><span>VITE</span></div>
+        <footer class="slide-foot"><span>CRUD • SEARCH • FILTER • RESPONSIVE</span><span>MISSION 07</span></footer>
+      </article>
+
+      <article class="slide auth-slide" data-slide="9" id="slide-9">
+        <header class="slide-head"><span class="logo logo-dark">08</span><span>MISSION 08 / BACKEND ADVANCED</span><span>09—10</span></header>
+        <section class="mission-copy compact dark-copy">
+          <p class="eyebrow"><i></i> AUTHENTICATION</p>
+          <h2>LEBIH DARI CRUD.<br /><span>ADA AKSES<br />YANG DIJAGA.</span></h2>
+          <p>Melanjutkan Course API dengan register, login, JWT, verifikasi email, pencarian, sorting, dan upload gambar.</p>
+        </section>
+        <section class="auth-console">
+          <div class="console-head"><b>EDUCOURSE / API</b><i>READY</i></div>
+          <div class="request"><b>POST</b><code>/register</code><span>201</span></div>
+          <div class="flow"><small>01</small><code>password → bcrypt.hash()</code></div>
+          <div class="flow"><small>02</small><code>email → verification_token</code></div>
+          <div class="request"><b>POST</b><code>/login</code><span>200</span></div>
+          <div class="flow"><small>03</small><code>credentials → JWT access token</code></div>
+          <div class="request"><b>POST</b><code>/upload</code><span>201</span></div>
+        </section>
+        <div class="auth-tags"><span>SEQUELIZE</span><span>JWT</span><span>NODEMAILER</span><span>MULTER</span></div>
+        <footer class="slide-foot"><span>AUTH • EMAIL • UPLOAD • SEARCH</span><span>MISSION 08</span></footer>
+      </article>
+
+      <article class="slide closing light" data-slide="10" id="slide-10">
+        <div class="grid-bg"></div>
+        <header class="slide-head"><span class="logo">FK</span><span>KEY TAKEAWAYS</span><span>10—10</span></header>
+        <section class="closing-copy">
+          <p class="eyebrow"><i></i> PROSES BELAJAR</p>
+          <h2>SELESAI SATU<br />MISSION,<br /><em>LANJUT BELAJAR.</em></h2>
+          <p>Portfolio ini bukan kumpulan hasil yang sempurna. Ini adalah catatan perkembangan saya dalam memahami bagaimana sebuah aplikasi web dibangun dari tampilan hingga backend.</p>
+        </section>
+        <ul class="takeaways">
+          <li><span>01</span><b>Mulai dari dasar,<br />lalu bertahap.</b></li>
+          <li><span>02</span><b>Belajar lewat praktik<br />dan kesalahan.</b></li>
+          <li><span>03</span><b>Dokumentasikan<br />setiap progres.</b></li>
+        </ul>
+        <div class="contact-card"><small>LIHAT PERJALANAN LENGKAP</small><b>github.com/fadhlankhalqi</b><span>TERIMA KASIH →</span></div>
+        <footer class="slide-foot"><span>FADLAN KHALQI • FULL-STACK DEVELOPMENT STUDENT</span><span>#JadiYangKamuMau</span></footer>
+      </article>
+    </main>
+    <script>
+      const selected = Math.min(10, Math.max(1, Number(new URLSearchParams(location.search).get('slide')) || 1));
+      document.querySelectorAll('.slide').forEach((slide) => slide.hidden = Number(slide.dataset.slide) !== selected);
+    </script>
+  </body>
+</html>
